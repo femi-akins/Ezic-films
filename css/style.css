@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Mono&family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: auto;
+  background-attachment: scroll;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Ubuntu", sans-serif;
+}
+
+button.normal {
+  color: var(--text-default, #fff);
+  text-align: center;
+  font-size: 13.616px;
+  font-family: Clash Display;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 1.362px;
+  text-transform: uppercase;
+  border-radius: 3.299px;
+  background: #f00;
+  padding: 9.9px 13.2px;
+}
+
+/* header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 20px 40px;
+  height: 80px;
+  z-index: 999;
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+}
+
+#header img {
+  width: 208.75px;
+  height: 22.923px;
+  flex-shrink: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  margin-top: 14px;
+  position: relative;
+  align-items: flex-end;
+}
+
+#navbar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 9px;
+  /* color: #1a1a1a; */
+  transition: 0.3s ease;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
+#hero {
+  background: linear-gradient(180deg, #090909 0%, rgba(9, 9, 9, 0) 100%),
+    url(../img/Banner1.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 15% right 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .play {
+  display: flex;
+  width: 112px;
+  height: 112px;
+  padding: 6.829px 13.659px;
+  margin: 160px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 21.854px;
+  flex-shrink: 0;
+  border-radius: 341.463px;
+  border: 0.683px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10.243902206420898px);
+}
+#hero .play2 {
+  border-radius: 328.767px;
+  border: 0.658px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 2.6301369667053223px 19.72602653503418px 0px
+    rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.86301326751709px);
+  display: flex;
+  flex-direction: column;
+  width: 96px;
+  height: 96px;
+  padding: 6.575px 13.151px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+#hero img {
+  width: 38.137px;
+  height: 38.137px;
+  margin-top: 15px;
+}
+
+#hero p {
+  color: var(--text-default, #fff);
+  font-size: 7.89px;
+  font-family: Clash Display;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.395px;
+  text-transform: uppercase;
+}
+
+#hero .icons {
+  background: linear-gradient(
+    180deg,
+    rgba(9, 9, 9, 0) 0%,
+    rgba(9, 9, 9, 0.3) 100%
+  );
+
+  width: 100%;
+  padding: 0 50px 0 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero .image1 {
+  width: 200px;
+  height: auto;
+  padding-top: 10px;
+}
+
+#hero .image1 h3 {
+  color: var(--text-default, #fff);
+  font-size: 26.951px;
+  font-family: Clash Display;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 1.348px;
+  text-transform: uppercase;
+}
+
+#hero .image2 {
+  width: 120px;
+  padding-top: 17px;
+}
+
+#hero .image2 p {
+  color: var(--text-default, #fff);
+  width: 120px;
+  font-size: 16px;
+  font-family: Clash Display;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+#hero .icons {
+  width: 100%;
+}
+
+#hero .icons .image3 {
+  width: 70px;
+  height: 61px;
+  flex-shrink: 0;
+}
+
+#hero .icons .image4 {
+  width: 99px;
+  height: 61px;
+  flex-shrink: 0;
+}
+
+#hero .icons .image5 {
+  width: 70px;
+  height: 61px;
+  flex-shrink: 0;
+}
+
+#hero .icons .image6 {
+  width: 77px;
+  height: 61px;
+  flex-shrink: 0;
+}
+
+#hero .icons .image7 {
+  width: 50.492px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+#hero .icons .image8 {
+  width: 76px;
+  height: 61px;
+  flex-shrink: 0;
+}
+
+#hero .icons .image9 {
+  width: 43.103px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+/* intro section */
+#intro {
+  padding: 100px 0;
+}
+
+#intro .intro-text {
+  justify-content: center;
+  text-align: center;
+}
+
+#intro .intro-text h3 {
+  color: var(--text-default, #fff);
+  text-align: center;
+  font-size: 42px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 3.4px;
+  text-transform: uppercase;
+}
+
+#intro .intro-text a {
+  text-decoration: none;
+}
+
+#intro .intro-text p {
+  padding: 20px 0 0 0;
+  color: var(--text-default, #fff);
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#intro .intro-text p::after {
+  content: "";
+  width: 15%;
+  height: 0.8px;
+  background: #fff;
+  position: absolute;
+  top: 120%;
+  left: 42.5%;
+}
+
+/* Home gallery */
+#Home-gallery {
+  padding: 0;
+  margin: 0;
+}
+
+#Home-gallery .title {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+#Home-gallery .title h5 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+#Home-gallery .gallery .banner1 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(9, 9, 9, 0) 0%,
+      rgba(9, 9, 9, 0.3) 100%
+    ),
+    url(../img/gallery1.png);
+  width: 100%;
+  height: 690px;
+
+  border-radius: 5.9px;
+
+  opacity: 0.9;
+  position: relative;
+  background-position: top 50% right 65%;
+}
+
+#Home-gallery .gallery .banner1 .banner-circle {
+  display: flex;
+  width: 73.75px;
+  height: 73.75px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 368.75px;
+  border: 0.738px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(11.0625px);
+  position: absolute;
+  top: 50%;
+  right: 45%;
+}
+
+#Home-gallery .gallery .banner1 .banner-circle p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin: 50px 0;
+}
+
+#Home-gallery .gallery .banner1 .banner-text {
+  position: absolute;
+  top: 88%;
+  right: 0;
+  left: 3%;
+}
+
+#Home-gallery .gallery .banner1 .banner-text h4 {
+  font-size: 23.6px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 1.18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#Home-gallery .gallery .banner1 .banner-text p {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-size: 9.588px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.959px;
+  text-transform: uppercase;
+}
+
+#Home-gallery .gallery .banner2 {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(9, 9, 9, 0) 0%,
+      rgba(9, 9, 9, 0.3) 100%
+    ),
+    url(../img/gallery2.png);
+  margin: 20px 20px 20px 0;
+  border-radius: 5.9px;
+  position: relative;
+}
+
+#Home-gallery .gallery .banner2-text,
+#Home-gallery .gallery .banner3-text,
+#Home-gallery .gallery .banner4-text,
+#Home-gallery .gallery .banner5-text {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+#Home-gallery .gallery .banner2 h4,
+#Home-gallery .gallery .banner3 h4,
+#Home-gallery .gallery .banner4 h4,
+#Home-gallery .gallery .banner5 h4 {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.738px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+#Home-gallery .gallery .banner2 p,
+#Home-gallery .gallery .banner3 p,
+#Home-gallery .gallery .banner4 p,
+#Home-gallery .gallery .banner5 p {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-size: 9.588px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.959px;
+  text-transform: uppercase;
+}
+
+#Home-gallery .gallery .banner3 {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(9, 9, 9, 0) 0%,
+      rgba(9, 9, 9, 0.3) 100%
+    ),
+    url(../img/gallery3.png);
+  margin: 20px 0;
+  border-radius: 5.9px;
+  position: relative;
+}
+
+#Home-gallery .gallery .banner4 {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(9, 9, 9, 0) 0%,
+      rgba(9, 9, 9, 0.3) 100%
+    ),
+    url(../img/gallery3.png);
+  border-radius: 5.9px;
+  position: relative;
+}
+
+#Home-gallery .gallery .banner5 {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(9, 9, 9, 0) 0%,
+      rgba(9, 9, 9, 0.3) 100%
+    ),
+    url(../img/gallery2.png);
+  border-radius: 5.9px;
+  position: relative;
+}
+
+#Home-gallery .gallery-link {
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#Home-gallery .gallery-link a {
+  text-decoration: none;
+}
+
+#Home-gallery .gallery-link p {
+  color: var(--text-default, #fff);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#Home-gallery .gallery-link p::after {
+  content: "";
+  width: 14.5%;
+  height: 0.5px;
+  background: #fff;
+  position: absolute;
+  top: 120%;
+  left: 42.7%;
+}
+
+/* testimonials */
+#testimonials {
+  padding: 100px 0;
+}
+
+#testimonials .header {
+  padding: 40px 0;
+}
+
+#testimonials .header h4 {
+  color: var(--text-default, #fff);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+#testimonials .card {
+  background: none;
+  border: 0.787px solid var(--border-default, rgba(255, 255, 255, 0.12));
+  align-items: flex-start;
+}
+
+#testimonials .card-image img {
+  padding: 30px 0 12px 20px;
+}
+
+#testimonials .card-body {
+  padding-left: 20px;
+}
+#testimonials .card-body .card-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18.9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.787px;
+  text-transform: uppercase;
+}
+
+#testimonials .card-body .card-description {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-family: "Ubuntu", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 170%;
+}
+
+#testimonials .card-footer {
+  padding-top: 0;
+  padding-left: 20px;
+}
+
+#testimonials .card-footer h5 {
+  color: var(--text-default, #fff);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14.175px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.709px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#testimonials .card-footer p {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10.237px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 1.024px;
+  text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 799px) {
+  /* This is the media query for the "HomePage" */
+  /* HOME-PAGE */
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 90vh;
+    width: 300px;
+    background: #373535;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #fff;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  #navbar li i {
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #hero h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
