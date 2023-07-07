@@ -713,9 +713,9 @@ footer .copyright p {
     position: fixed;
     top: 0;
     right: -300px;
-    height: 90vh;
+    height: 63vh;
     width: 300px;
-    background: #373535;
+    background: #000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     padding: 80px 0 0 10px;
     transition: 0.3s;
@@ -725,8 +725,19 @@ footer .copyright p {
     right: 0px;
   }
 
+  #navbar {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+  }
+
+  #navbar li a {
+    font-size: 18px;
+  }
+
   #navbar li {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 
   #mobile {
@@ -737,14 +748,14 @@ footer .copyright p {
   #mobile i {
     color: #fff;
     font-size: 24px;
-    padding-left: 20px;
+    padding-right: 20px;
   }
 
   #close {
     display: initial;
     position: absolute;
     top: 30px;
-    left: 30px;
+    right: 30px;
     color: #fff;
     font-size: 24px;
   }
@@ -754,13 +765,267 @@ footer .copyright p {
   }
 
   #hero {
-    height: 70vh;
+    height: 100vh;
     padding: 0 80px;
     background-position: top 30% right 30%;
   }
 
-  #hero h1 {
-    font-size: 60px;
-    line-height: 60px;
+  #hero .play {
+    position: absolute;
+    top: 23%;
+    right: 42.5%;
+    width: 80px;
+    height: 80px;
+  }
+
+  #hero img {
+    margin-top: 17px;
+  }
+
+  #hero p {
+    font-size: 6px;
+  }
+
+  #hero #column {
+    display: none;
+  }
+
+  #hero .image1 {
+    padding-top: 25px;
+  }
+
+  #hero .image1 h3 {
+    color: var(--text-default, #fff);
+    font-size: 22px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    width: 180px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  #hero .image2 {
+    width: 70%;
+    padding-top: 35px;
+    margin-right: 0;
+  }
+
+  #hero .image2 p {
+    color: var(--text-default, #fff);
+    width: 120px;
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+  }
+
+  #hero .icons {
+    width: 100%;
+  }
+
+  #hero .icons .image3 img {
+    width: 70px;
+    height: 61px;
+  }
+
+  #hero .icons .image4 img {
+    width: 99px;
+    height: 61px;
+  }
+
+  #hero .icons .image5 img {
+    width: 70px;
+    height: 61px;
+  }
+
+  #hero .icons .image6 img {
+    width: 77px;
+    height: 61px;
+  }
+
+  #hero .icons .image7 img {
+    width: 50.492px;
+    height: 60px;
+  }
+
+  #hero .icons .image8 img {
+    width: 76px;
+    height: 61px;
+  }
+
+  #hero .icons .image9 img {
+    width: 43.103px;
+    height: 50px;
+  }
+
+  #hero .icons .image10 img {
+    width: 152.653px;
+    height: 45px;
+  }
+
+  /* intro section */
+  #intro {
+    padding: 70px 0;
+  }
+
+  #intro .intro-text h3 {
+    font-size: 37px;
+  }
+
+  #intro .intro-text p {
+    font-size: 19px;
+  }
+
+  #intro .intro-text p::after {
+    width: 45%;
+    left: 27%;
+    right: 50%;
+  }
+
+  /* Home gallery */
+
+  #Home-gallery .title h5 {
+    font-size: 16px;
+  }
+
+  #Home-gallery .gallery .banner1 {
+    width: 100%;
+    height: 242.627px;
+  }
+
+  #Home-gallery .gallery .banner1 .banner-circle {
+    width: 60px;
+    height: 60px;
+    top: 35%;
+    right: 45%;
+  }
+
+  #Home-gallery .gallery .banner1 .banner-circle p {
+    font-size: 9px;
+  }
+
+  #Home-gallery .gallery .banner1 .banner-text {
+    position: absolute;
+    top: 78%;
+    right: 0;
+    left: 3%;
+  }
+
+  #Home-gallery .gallery .banner1 .banner-text h4 {
+    font-size: 20px;
+  }
+
+  #Home-gallery .gallery .banner2 {
+    width: 50%;
+    height: 121.115px;
+    margin: 20px 20px 20px 0;
+  }
+
+  #Home-gallery .gallery .banner2-text,
+  #Home-gallery .gallery .banner3-text,
+  #Home-gallery .gallery .banner4-text,
+  #Home-gallery .gallery .banner5-text {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+  }
+
+  #Home-gallery .gallery .banner2 h4,
+  #Home-gallery .gallery .banner3 h4,
+  #Home-gallery .gallery .banner4 h4,
+  #Home-gallery .gallery .banner5 h4 {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.738px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  #Home-gallery .gallery .banner2 p,
+  #Home-gallery .gallery .banner3 p,
+  #Home-gallery .gallery .banner4 p,
+  #Home-gallery .gallery .banner5 p {
+    color: var(--text-muted, rgba(255, 255, 255, 0.7));
+    font-size: 9.588px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.959px;
+    text-transform: uppercase;
+  }
+
+  #Home-gallery .gallery .banner3 {
+    width: 100%;
+    height: 121.115px;
+    margin: 20px 0;
+    border-radius: 5.9px;
+    position: relative;
+  }
+
+  #Home-gallery .gallery .banner4 {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(9, 9, 9, 0) 0%,
+        rgba(9, 9, 9, 0.3) 100%
+      ),
+      url(../img/gallery3.png);
+    border-radius: 5.9px;
+    position: relative;
+  }
+
+  #Home-gallery .gallery .banner5 {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(9, 9, 9, 0) 0%,
+        rgba(9, 9, 9, 0.3) 100%
+      ),
+      url(../img/gallery2.png);
+    border-radius: 5.9px;
+    position: relative;
+  }
+
+  #Home-gallery .gallery-link {
+    padding: 40px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #Home-gallery .gallery-link a {
+    text-decoration: none;
+  }
+
+  #Home-gallery .gallery-link p {
+    color: var(--text-default, #fff);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  #Home-gallery .gallery-link p::after {
+    content: "";
+    width: 14.5%;
+    height: 0.5px;
+    background: #fff;
+    position: absolute;
+    top: 120%;
+    left: 42.7%;
   }
 }
