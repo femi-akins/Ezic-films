@@ -160,32 +160,33 @@ button.normal {
 }
 
 #hero .image1 {
-  width: 200px;
-  height: auto;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 #hero .image1 h3 {
   color: var(--text-default, #fff);
-  font-size: 26.951px;
-  font-family: Clash Display;
+  font-size: 22px;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
+  width: 180px;
   font-weight: 500;
   line-height: 140%;
-  letter-spacing: 1.348px;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 #hero .image2 {
-  width: 120px;
-  padding-top: 17px;
+  width: 70%;
+  padding-top: 35px;
+  margin-right: 0;
 }
 
 #hero .image2 p {
   color: var(--text-default, #fff);
   width: 120px;
-  font-size: 16px;
-  font-family: Clash Display;
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
@@ -197,46 +198,51 @@ button.normal {
   width: 100%;
 }
 
-#hero .icons .image3 {
+#hero .icons .image3 img {
   width: 70px;
   height: 61px;
   flex-shrink: 0;
 }
 
-#hero .icons .image4 {
+#hero .icons .image4 img {
   width: 99px;
   height: 61px;
   flex-shrink: 0;
 }
 
-#hero .icons .image5 {
+#hero .icons .image5 img {
   width: 70px;
   height: 61px;
   flex-shrink: 0;
 }
 
-#hero .icons .image6 {
+#hero .icons .image6 img {
   width: 77px;
   height: 61px;
   flex-shrink: 0;
 }
 
-#hero .icons .image7 {
+#hero .icons .image7 img {
   width: 50.492px;
-  height: 40px;
+  height: 60px;
   flex-shrink: 0;
 }
 
-#hero .icons .image8 {
+#hero .icons .image8 img {
   width: 76px;
   height: 61px;
   flex-shrink: 0;
 }
 
-#hero .icons .image9 {
+#hero .icons .image9 img {
   width: 43.103px;
   height: 50px;
   flex-shrink: 0;
+}
+
+#hero .icons .image10 img {
+  width: 152.653px;
+  height: 45px;
 }
 
 /* intro section */
@@ -577,6 +583,120 @@ button.normal {
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
+  letter-spacing: 1.024px;
+  text-transform: uppercase;
+}
+
+/* contact */
+#contact {
+  padding: 100px 0;
+}
+
+#contact .contact-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#contact .contact-text h6 {
+  color: var(--text-default, #fff);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+#contact .contact-text h1 {
+  color: var(--text-default, #fff);
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 3.542px;
+  text-transform: uppercase;
+  padding: 80px 0 30px 0;
+}
+
+#contact .contact-text a {
+  text-decoration: none;
+  color: #000;
+}
+
+#contact .contact-text button {
+  border-radius: 3.15px;
+  background: #fff;
+  width: 156px;
+  height: 43px;
+  padding: 9.45px 12.6px;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+/* footer */
+footer {
+  padding: 80px 0;
+}
+
+footer h5 {
+  color: var(--text-default, #fff);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14.175px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.709px;
+  text-transform: uppercase;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10.237px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 1.024px;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+footer .footer-icons {
+  padding: 30px 0;
+}
+footer .footer-icons a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .footer-icons i {
+  padding: 0 15px;
+  font-size: 12px;
+}
+
+footer .copyright {
+  padding-top: 60px;
+  margin-bottom: -40px;
+}
+
+footer .copyright p {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10.237px;
+  font-style: normal;
+  font-weight: 500;
   letter-spacing: 1.024px;
   text-transform: uppercase;
 }
