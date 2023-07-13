@@ -201,48 +201,49 @@ button.normal {
 #hero .icons .image3 img {
   width: 70px;
   height: 61px;
-  flex-shrink: 0;
+  object-fit: contain;
 }
 
 #hero .icons .image4 img {
   width: 99px;
   height: 61px;
-  flex-shrink: 0;
+  object-fit: contain;
 }
 
 #hero .icons .image5 img {
   width: 70px;
   height: 61px;
-  flex-shrink: 0;
+  object-fit: contain;
 }
 
 #hero .icons .image6 img {
   width: 77px;
   height: 61px;
-  flex-shrink: 0;
+  object-fit: contain;
 }
 
 #hero .icons .image7 img {
   width: 50.492px;
   height: 60px;
-  flex-shrink: 0;
+  object-fit: contain;
 }
 
 #hero .icons .image8 img {
   width: 76px;
   height: 61px;
-  flex-shrink: 0;
+  object-fit: contain;
 }
 
 #hero .icons .image9 img {
   width: 43.103px;
   height: 50px;
-  flex-shrink: 0;
+  object-fit: contain;
 }
 
 #hero .icons .image10 img {
   width: 152.653px;
   height: 45px;
+  object-fit: contain;
 }
 
 /* intro section */
@@ -324,9 +325,7 @@ button.normal {
     url(../img/gallery1.png);
   width: 100%;
   height: 690px;
-
   border-radius: 5.9px;
-
   opacity: 0.9;
   position: relative;
   background-position: top 50% right 65%;
@@ -528,9 +527,27 @@ button.normal {
 }
 
 #testimonials .card {
-  background: none;
+  background: #000;
   border: 0.787px solid var(--border-default, rgba(255, 255, 255, 0.12));
   align-items: flex-start;
+  margin: 0 10px;
+  width: calc(100% / 3);
+}
+
+#testimonials .cards-wrapper {
+  display: flex;
+}
+
+#testimonials .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
+  background-color: #000;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
 }
 
 #testimonials .card-image img {
@@ -701,6 +718,156 @@ footer .copyright p {
   text-transform: uppercase;
 }
 
+/* ABOUT US PAGE  */
+#heading {
+  padding: 60px 0;
+}
+
+#heading .heading-text {
+  padding-top: 30px;
+}
+
+#heading .heading-text h2 {
+  color: var(--text-default, #fff);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 52.833px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 3.142px;
+  text-transform: uppercase;
+}
+#heading .heading-img1 {
+  display: flex;
+  gap: 30px;
+}
+
+#heading .heading-img1 img {
+  fill: var(--icon-default, #fff);
+  object-fit: contain;
+}
+
+/* services  */
+#services {
+  padding: 80px 0;
+}
+
+#services .services-head {
+  padding: 40px 0;
+}
+
+#services .services-head h4 {
+  color: #b3b3b3;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 31.2px */
+  letter-spacing: 1.2px;
+}
+
+#services .services-title h2 {
+  width: 587.97px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 62.55px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 68.805px */
+  letter-spacing: 3.128px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #e4e4e4;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  margin: 0;
+}
+
+#services .services-title span {
+  color: var(--text-default, #fff);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 62.55px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 68.805px */
+  letter-spacing: 3.128px;
+  text-transform: uppercase;
+  width: 587.97px;
+}
+
+#services .services-subtitle {
+  padding-top: 20px;
+}
+#services .services-subtitle p {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80%; /* 38.676px */
+}
+
+#services .services-text h3 {
+  color: var(--text-default, #fff);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 50.961px */
+  letter-spacing: 1.82px;
+  text-transform: uppercase;
+}
+
+#services .services-text p {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 38.676px */
+  width: 667.672px;
+}
+
+#services .services-footer {
+  background-image: linear-gradient(
+      180deg,
+      rgba(9, 9, 9, 0) 0%,
+      rgba(9, 9, 9, 0.3) 100%
+    ),
+    url(../img/gallery1.png);
+  width: 100%;
+  height: 390px;
+  border-radius: 5.9px;
+  opacity: 0.9;
+  position: relative;
+  background-position: top 20% left 15%;
+  object-fit: contain;
+}
+
+#services .services-footer-text {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+#services .services-footer-text h4 {
+  color: var(--text-default, #fff);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22.24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 31.136px */
+  letter-spacing: 1.112px;
+  text-transform: uppercase;
+}
+
+#services .services-footer-text p {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-family: "Ubuntu", sans-serif;
+  font-size: 9.035px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 9.035px */
+  letter-spacing: 0.903px;
+  text-transform: uppercase;
+}
 /* MEDIA QUERIES */
 @media (max-width: 799px) {
   /* This is the media query for the "HomePage" */
@@ -711,13 +878,13 @@ footer .copyright p {
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 0;
+    top: 50px;
     right: -300px;
-    height: 63vh;
-    width: 300px;
+    height: 53vh;
+    width: 250px;
     background: #000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    padding: 80px 0 0 10px;
+    padding: 25px 20px 0 10px;
     transition: 0.3s;
   }
 
@@ -729,7 +896,6 @@ footer .copyright p {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-top: 75px;
   }
 
   #navbar li a {
@@ -765,15 +931,15 @@ footer .copyright p {
   }
 
   #hero {
-    height: 100vh;
+    height: 80vh;
     padding: 0 80px;
-    background-position: top 30% right 30%;
+    background-position: top 10% right 50%;
   }
 
   #hero .play {
     position: absolute;
-    top: 23%;
-    right: 42.5%;
+    top: 18%;
+    right: 41.5%;
     width: 80px;
     height: 80px;
   }
@@ -790,7 +956,7 @@ footer .copyright p {
     display: none;
   }
 
-  #hero .image1 {
+  /* #hero .image1 {
     padding-top: 25px;
   }
 
@@ -867,7 +1033,7 @@ footer .copyright p {
   #hero .icons .image10 img {
     width: 152.653px;
     height: 45px;
-  }
+  } */
 
   /* intro section */
   #intro {
@@ -883,9 +1049,9 @@ footer .copyright p {
   }
 
   #intro .intro-text p::after {
-    width: 45%;
-    left: 27%;
-    right: 50%;
+    width: 64%;
+    left: 18%;
+    height: 1.65px;
   }
 
   /* Home gallery */
@@ -921,10 +1087,51 @@ footer .copyright p {
     font-size: 20px;
   }
 
+  #Home-gallery .gallery #banner1 {
+    margin-top: -5px;
+  }
+
+  #Home-gallery .gallery #banner2 {
+    margin-top: -27px;
+  }
+
   #Home-gallery .gallery .banner2 {
-    width: 50%;
+    width: 48%;
     height: 121.115px;
     margin: 20px 20px 20px 0;
+
+    background-position: top 20% right 50%;
+  }
+
+  #Home-gallery .gallery .banner3 {
+    width: 48%;
+    height: 121.115px;
+    position: absolute;
+    top: 194.6%;
+    left: 50%;
+    margin-left: 2px;
+    background-position: top 30% right 60%;
+  }
+
+  #Home-gallery .gallery .banner4 {
+    width: 48%;
+    height: 121.115px;
+    margin: 20px 20px 20px 0;
+    position: relative;
+    background-position: top 30% right 60%;
+  }
+
+  .cards-wrapper {
+    display: flex;
+  }
+
+  #Home-gallery .gallery .banner5 {
+    width: 48%;
+    height: 121.115px;
+    position: absolute;
+    top: 217.7%;
+    left: 50%;
+    background-position: top 20% right 50%;
   }
 
   #Home-gallery .gallery .banner2-text,
@@ -932,68 +1139,8 @@ footer .copyright p {
   #Home-gallery .gallery .banner4-text,
   #Home-gallery .gallery .banner5-text {
     position: absolute;
-    top: 80%;
+    top: 60%;
     left: 5%;
-  }
-
-  #Home-gallery .gallery .banner2 h4,
-  #Home-gallery .gallery .banner3 h4,
-  #Home-gallery .gallery .banner4 h4,
-  #Home-gallery .gallery .banner5 h4 {
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%;
-    letter-spacing: 0.738px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-  }
-
-  #Home-gallery .gallery .banner2 p,
-  #Home-gallery .gallery .banner3 p,
-  #Home-gallery .gallery .banner4 p,
-  #Home-gallery .gallery .banner5 p {
-    color: var(--text-muted, rgba(255, 255, 255, 0.7));
-    font-size: 9.588px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: 0.959px;
-    text-transform: uppercase;
-  }
-
-  #Home-gallery .gallery .banner3 {
-    width: 100%;
-    height: 121.115px;
-    margin: 20px 0;
-    border-radius: 5.9px;
-    position: relative;
-  }
-
-  #Home-gallery .gallery .banner4 {
-    width: 100%;
-    height: 300px;
-    background-image: linear-gradient(
-        180deg,
-        rgba(9, 9, 9, 0) 0%,
-        rgba(9, 9, 9, 0.3) 100%
-      ),
-      url(../img/gallery3.png);
-    border-radius: 5.9px;
-    position: relative;
-  }
-
-  #Home-gallery .gallery .banner5 {
-    width: 100%;
-    height: 300px;
-    background-image: linear-gradient(
-        180deg,
-        rgba(9, 9, 9, 0) 0%,
-        rgba(9, 9, 9, 0.3) 100%
-      ),
-      url(../img/gallery2.png);
-    border-radius: 5.9px;
-    position: relative;
   }
 
   #Home-gallery .gallery-link {
@@ -1008,24 +1155,14 @@ footer .copyright p {
   }
 
   #Home-gallery .gallery-link p {
-    color: var(--text-default, #fff);
-    font-family: "Ubuntu", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: 2.6px;
-    text-transform: uppercase;
-    position: relative;
+    margin-top: -40px;
   }
 
   #Home-gallery .gallery-link p::after {
     content: "";
-    width: 14.5%;
-    height: 0.5px;
-    background: #fff;
-    position: absolute;
-    top: 120%;
-    left: 42.7%;
+    width: 46%;
+    height: 1.5px;
+    top: 150%;
+    left: 26.8%;
   }
 }
