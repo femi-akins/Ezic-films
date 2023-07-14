@@ -1206,4 +1206,74 @@ footer .copyright p {
     text-align: center;
     align-items: center;
   }
+
+  /* ABOUT PAGE */
+  /* This is the media query for the "HomePage" */
+  #services {
+    padding: 10px 0;
+  }
+
+  #services .services-head {
+    padding: 10px 0;
+  }
+
+  #services .services-head h4 {
+    font-size: 24px;
+  }
+
+  #services .services-title h2 {
+    font-size: 26px;
+  }
+
+  #services .services-title span {
+    font-size: 26px;
+  }
+
+  #services .services-subtitle {
+    padding-top: 20px;
+  }
+  #services .services-subtitle p {
+    font-size: 14px;
+  }
+
+  #services .services-text h3 {
+    font-size: 26px;
+  }
+
+  #services .services-text p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  #services .services-footer-text h4 {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+  }
+
+  #services .services-footer-text p {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+  }
+
+  #heading .heading-text h2 {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+  }
+
+  #heading .heading-img1 {
+    margin-top: -30px;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+  }
+
+  #heading .heading-img1 img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #services .services-footer {
+    background-position: top 30% left 40%;
+  }
 }
