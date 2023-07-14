@@ -663,6 +663,17 @@ footer {
   padding: 80px 0;
 }
 
+footer .logo-text p {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-family: Clash Display;
+  font-size: 10.237px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 1.024px;
+  text-transform: uppercase;
+}
+
 footer h5 {
   color: var(--text-default, #fff);
   font-family: "Ubuntu", sans-serif;
@@ -706,6 +717,13 @@ footer .footer-icons i {
 footer .copyright {
   padding-top: 60px;
   margin-bottom: -40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .right {
+  display: flex;
+  gap: 10px;
 }
 
 footer .copyright p {
@@ -867,6 +885,15 @@ footer .copyright p {
   line-height: 100%; /* 9.035px */
   letter-spacing: 0.903px;
   text-transform: uppercase;
+}
+
+#services #row1,
+#row2,
+#row3,
+#row4,
+#row5,
+#row6 {
+  padding: 60px 0;
 }
 /* MEDIA QUERIES */
 @media (max-width: 799px) {
@@ -1164,5 +1191,19 @@ footer .copyright p {
     height: 1.5px;
     top: 150%;
     left: 26.8%;
+  }
+
+  /* footer */
+  footer #Ezic-logo {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 60px 0;
+  }
+
+  footer .footer-icons {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }
