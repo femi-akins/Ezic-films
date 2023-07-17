@@ -916,7 +916,21 @@ footer .copyright p {
   text-transform: uppercase;
 }
 
-#pro-gallery .pro-gallery1,
+#pro-gallery .pro-gallery1 {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(9, 9, 9, 0) 0%,
+      rgba(9, 9, 9, 0.3) 100%
+    ),
+    url(../img/UNCLE\ STEVEN\ PNG\ .png);
+  border-radius: 5.9px;
+  background-position: top 20% left 35%;
+  position: relative;
+  margin: 10px 0;
+}
+
 #pro-gallery .pro-gallery2 {
   width: 100%;
   height: 300px;
@@ -925,7 +939,7 @@ footer .copyright p {
       rgba(9, 9, 9, 0) 0%,
       rgba(9, 9, 9, 0.3) 100%
     ),
-    url(../img/gallery1.png);
+    url(../img/SOUR\ GRAPE.png);
   border-radius: 5.9px;
   background-position: top 20% left 35%;
   position: relative;
@@ -970,7 +984,7 @@ footer .copyright p {
       rgba(9, 9, 9, 0) 0%,
       rgba(9, 9, 9, 0.3) 100%
     ),
-    url(../img/gallery3.png);
+    url(../img/KNOR.png);
   border-radius: 5.9px;
   background-position: top 20% left 35%;
   position: relative;
@@ -985,7 +999,7 @@ footer .copyright p {
       rgba(9, 9, 9, 0) 0%,
       rgba(9, 9, 9, 0.3) 100%
     ),
-    url(../img/gallery2.png);
+    url(../img/DISABILITY.png);
   border-radius: 5.9px;
   background-position: top 20% left 35%;
   position: relative;
@@ -997,6 +1011,103 @@ footer .copyright p {
   position: absolute;
   top: 70%;
   left: 10%;
+}
+
+/* CONTACT PAGE */
+#form {
+  padding: 100px 0;
+}
+
+#form .form-title h2 {
+  color: var(--text-default, #fff);
+  /* heading/large uppercase */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 140.8px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+  padding: 60px 0;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: none;
+  border: 1px solid rgba(156, 156, 156, 0.4);
+  font-size: 13px;
+  color: #fff;
+  background: #000;
+}
+
+form label {
+  color: var(--text-default, #fff);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+form ::placeholder {
+  text-transform: uppercase;
+  color: rgba(156, 156, 156, 0.76);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+form button {
+  background: #f00;
+  text-transform: uppercase;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 9.898px 13.197px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  transition: 0.4s ease;
+  border-radius: 3.299px;
+  justify-content: center;
+}
+
+form button a {
+  text-decoration: none;
+  color: var(--text-default, #fff);
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 13.616px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 13.616px */
+  letter-spacing: 1.362px;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  background-color: #fff;
+}
+form button:hover a {
+  color: #000;
+}
+
+/* Add a background color and some padding around the form */
+form {
+  background-color: #000;
+  padding: 20px;
 }
 
 /* MEDIA QUERIES */
@@ -1191,11 +1302,6 @@ footer .copyright p {
     font-size: 16px;
   }
 
-  #Home-gallery .gallery .banner1 {
-    width: 100%;
-    height: 242.627px;
-  }
-
   #Home-gallery .gallery .banner1 .banner-circle {
     width: 60px;
     height: 60px;
@@ -1222,48 +1328,38 @@ footer .copyright p {
     margin-top: -5px;
   }
 
-  #Home-gallery .gallery #banner2 {
-    margin-top: -27px;
+  #Home-gallery .gallery .banner1 {
+    width: 100%;
+    height: 242.627px;
   }
 
   #Home-gallery .gallery .banner2 {
-    width: 48%;
+    width: 100%;
     height: 121.115px;
-    margin: 20px 20px 20px 0;
-
-    background-position: top 20% right 50%;
+    background-position: top 20% right 60%;
   }
 
   #Home-gallery .gallery .banner3 {
-    width: 48%;
+    width: 100%;
     height: 121.115px;
-    position: absolute;
-    top: 194.6%;
-    left: 50%;
-    margin-left: 2px;
     background-position: top 30% right 60%;
   }
 
   #Home-gallery .gallery .banner4 {
-    width: 48%;
+    width: 100%;
     height: 121.115px;
-    margin: 20px 20px 20px 0;
-    position: relative;
     background-position: top 30% right 60%;
   }
 
-  .cards-wrapper {
-    display: flex;
+  #Home-gallery .gallery .banner5 {
+    width: 100%;
+    height: 121.115px;
+    background-position: top 20% right 60%;
   }
 
-  #Home-gallery .gallery .banner5 {
-    width: 48%;
-    height: 121.115px;
-    position: absolute;
-    top: 217.7%;
-    left: 50%;
-    background-position: top 20% right 50%;
-  }
+  /* .cards-wrapper {
+    display: flex;
+  } */
 
   #Home-gallery .gallery .banner2-text,
   #Home-gallery .gallery .banner3-text,
@@ -1286,7 +1382,7 @@ footer .copyright p {
   }
 
   #Home-gallery .gallery-link p {
-    margin-top: -40px;
+    margin-top: -20px;
   }
 
   #Home-gallery .gallery-link p::after {
