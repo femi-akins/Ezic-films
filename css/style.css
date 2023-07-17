@@ -357,6 +357,11 @@ button.normal {
   margin: 50px 0;
 }
 
+#Home-gallery .gallery .banner1 .banner-circle a {
+  text-decoration: none;
+  color: #fff;
+}
+
 #Home-gallery .gallery .banner1 .banner-text {
   position: absolute;
   top: 88%;
