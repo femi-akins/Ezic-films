@@ -737,6 +737,10 @@ footer .copyright p {
 }
 
 /* ABOUT US PAGE  */
+#hero.heading {
+  background: #000;
+}
+
 #heading {
   padding: 60px 0;
 }
@@ -765,7 +769,6 @@ footer .copyright p {
   object-fit: contain;
 }
 
-/* services  */
 #services {
   padding: 80px 0;
 }
@@ -784,7 +787,6 @@ footer .copyright p {
 }
 
 #services .services-title h2 {
-  width: 587.97px;
   font-family: "Ubuntu", sans-serif;
   font-size: 62.55px;
   font-style: normal;
@@ -895,6 +897,108 @@ footer .copyright p {
 #row6 {
   padding: 60px 0;
 }
+
+/* PROJECT PAGE */
+#hero.project {
+  background: #000;
+  height: 40vh;
+}
+
+.project .project-text h2 {
+  color: var(--text-default, #fff);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 2.4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#pro-gallery .pro-gallery1,
+#pro-gallery .pro-gallery2 {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(9, 9, 9, 0) 0%,
+      rgba(9, 9, 9, 0.3) 100%
+    ),
+    url(../img/gallery1.png);
+  border-radius: 5.9px;
+  background-position: top 20% left 35%;
+  position: relative;
+  margin: 10px 0;
+}
+
+#pro-gallery .pro-gallery1 .pro-gallery-text,
+#pro-gallery .pro-gallery2 .pro-gallery-text {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
+#pro-gallery .pro-gallery-text h4 {
+  color: var(--text-default, #fff);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25.302px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 1.265px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#pro-gallery .pro-gallery-text p {
+  color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10.279px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 10.279px */
+  letter-spacing: 1.028px;
+  text-transform: uppercase;
+}
+
+#pro-gallery .pro-gallery3 {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(9, 9, 9, 0) 0%,
+      rgba(9, 9, 9, 0.3) 100%
+    ),
+    url(../img/gallery3.png);
+  border-radius: 5.9px;
+  background-position: top 20% left 35%;
+  position: relative;
+  margin: 10px 0;
+}
+
+#pro-gallery .pro-gallery4 {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(9, 9, 9, 0) 0%,
+      rgba(9, 9, 9, 0.3) 100%
+    ),
+    url(../img/gallery2.png);
+  border-radius: 5.9px;
+  background-position: top 20% left 35%;
+  position: relative;
+  margin: 10px 0;
+}
+
+#pro-gallery .pro-gallery3 .pro-gallery-text,
+#pro-gallery .pro-gallery4 .pro-gallery-text {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 799px) {
   /* This is the media query for the "HomePage" */
@@ -1208,10 +1312,7 @@ footer .copyright p {
   }
 
   /* ABOUT PAGE */
-  /* This is the media query for the "HomePage" */
-  #services {
-    padding: 10px 0;
-  }
+  /* This is the media query for the "About Page" */
 
   #services .services-head {
     padding: 10px 0;
@@ -1275,5 +1376,13 @@ footer .copyright p {
 
   #services .services-footer {
     background-position: top 30% left 40%;
+    width: 100%;
+  }
+
+  /* PROJECT PAGE */
+  /* This is the media query for the "Project Page" */
+
+  .project .project-text h2 {
+    font-size: 40px;
   }
 }
