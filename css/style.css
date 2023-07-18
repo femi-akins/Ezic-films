@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Mono&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@900&family=Roboto+Mono&family=Ubuntu&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -139,7 +140,7 @@ button.normal {
 #hero p {
   color: var(--text-default, #fff);
   font-size: 7.89px;
-  font-family: Clash Display;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
@@ -187,7 +188,7 @@ button.normal {
   color: var(--text-default, #fff);
   width: 120px;
   font-size: 14px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
@@ -261,7 +262,7 @@ button.normal {
   color: var(--text-default, #fff);
   text-align: center;
   font-size: 42px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
@@ -277,7 +278,7 @@ button.normal {
   padding: 20px 0 0 0;
   color: var(--text-default, #fff);
   font-size: 14px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
@@ -288,12 +289,12 @@ button.normal {
 
 #intro .intro-text p::after {
   content: "";
-  width: 15%;
+  width: 17%;
   height: 0.8px;
   background: #fff;
   position: absolute;
   top: 120%;
-  left: 42.5%;
+  left: 41.5%;
 }
 
 /* Home gallery */
@@ -492,7 +493,7 @@ button.normal {
 
 #Home-gallery .gallery-link p {
   color: var(--text-default, #fff);
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -523,7 +524,7 @@ button.normal {
 
 #testimonials .header h4 {
   color: var(--text-default, #fff);
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
@@ -564,7 +565,7 @@ button.normal {
   padding-left: 20px;
 }
 #testimonials .card-body .card-title {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18.9px;
   font-style: normal;
   font-weight: 500;
@@ -575,7 +576,7 @@ button.normal {
 
 #testimonials .card-body .card-description {
   color: var(--text-muted, rgba(255, 255, 255, 0.7));
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 300;
@@ -589,7 +590,7 @@ button.normal {
 
 #testimonials .card-footer h5 {
   color: var(--text-default, #fff);
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14.175px;
   font-style: normal;
   font-weight: 500;
@@ -601,7 +602,7 @@ button.normal {
 
 #testimonials .card-footer p {
   color: var(--text-muted, rgba(255, 255, 255, 0.7));
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 10.237px;
   font-style: normal;
   font-weight: 500;
@@ -634,7 +635,7 @@ button.normal {
 #contact .contact-text h1 {
   color: var(--text-default, #fff);
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 65px;
   font-style: normal;
   font-weight: 500;
@@ -671,7 +672,7 @@ footer {
 
 footer .logo-text p {
   color: var(--text-muted, rgba(255, 255, 255, 0.7));
-  font-family: Clash Display;
+  font-family: "Montserrat", sans-serif;
   font-size: 10.237px;
   font-style: normal;
   font-weight: 500;
@@ -682,7 +683,7 @@ footer .logo-text p {
 
 footer h5 {
   color: var(--text-default, #fff);
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14.175px;
   font-style: normal;
   font-weight: 500;
@@ -697,7 +698,7 @@ footer ul {
 
 footer ul li {
   color: var(--text-muted, rgba(255, 255, 255, 0.7));
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 10.237px;
   font-style: normal;
   font-weight: 500;
@@ -823,7 +824,7 @@ footer .copyright p {
 }
 #services .services-subtitle p {
   color: var(--text-muted, rgba(255, 255, 255, 0.7));
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -875,7 +876,7 @@ footer .copyright p {
 
 #services .services-footer-text h4 {
   color: var(--text-default, #fff);
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22.24px;
   font-style: normal;
   font-weight: 500;
@@ -886,7 +887,7 @@ footer .copyright p {
 
 #services .services-footer-text p {
   color: var(--text-muted, rgba(255, 255, 255, 0.7));
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 9.035px;
   font-style: normal;
   font-weight: 500;
@@ -912,7 +913,7 @@ footer .copyright p {
 
 .project .project-text h2 {
   color: var(--text-default, #fff);
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -961,7 +962,7 @@ footer .copyright p {
 
 #pro-gallery .pro-gallery-text h4 {
   color: var(--text-default, #fff);
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 25.302px;
   font-style: normal;
   font-weight: 500;
@@ -973,7 +974,7 @@ footer .copyright p {
 
 #pro-gallery .pro-gallery-text p {
   color: var(--text-muted, rgba(255, 255, 255, 0.7));
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 10.279px;
   font-style: normal;
   font-weight: 500;
@@ -1027,7 +1028,7 @@ footer .copyright p {
 #form .form-title h2 {
   color: var(--text-default, #fff);
   /* heading/large uppercase */
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 128px;
   font-style: normal;
   font-weight: 500;
@@ -1054,7 +1055,7 @@ textarea {
 
 form label {
   color: var(--text-default, #fff);
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1066,7 +1067,7 @@ form label {
 form ::placeholder {
   text-transform: uppercase;
   color: rgba(156, 156, 156, 0.76);
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1094,7 +1095,7 @@ form button a {
   text-decoration: none;
   color: var(--text-default, #fff);
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13.616px;
   font-style: normal;
   font-weight: 500;
