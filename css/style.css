@@ -23,7 +23,6 @@ button.normal {
   color: var(--text-default, #fff);
   text-align: center;
   font-size: 13.616px;
-  font-family: Clash Display;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
@@ -36,6 +35,7 @@ button.normal {
 
 /* header */
 #header {
+  background: linear-gradient(180deg, #090909 0%, rgba(9, 9, 9, 0) 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,8 +86,6 @@ button.normal {
 }
 
 #hero {
-  background: linear-gradient(180deg, #090909 0%, rgba(9, 9, 9, 0) 100%),
-    url(../img/Banner1.png);
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -98,39 +96,26 @@ button.normal {
   justify-content: center;
 }
 
-#hero .play {
-  display: flex;
-  width: 112px;
-  height: 112px;
-  padding: 6.829px 13.659px;
-  margin: 160px 0;
-  justify-content: center;
-  align-items: center;
-  gap: 21.854px;
-  flex-shrink: 0;
-  border-radius: 341.463px;
-  border: 0.683px solid rgba(255, 255, 255, 0.15);
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10.243902206420898px);
-}
-#hero .play2 {
-  border-radius: 328.767px;
-  border: 0.658px solid rgba(255, 255, 255, 0.15);
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 2.6301369667053223px 19.72602653503418px 0px
-    rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.86301326751709px);
-  display: flex;
-  flex-direction: column;
-  width: 96px;
-  height: 96px;
-  padding: 6.575px 13.151px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
 #hero img {
   width: 38.137px;
   height: 38.137px;
@@ -198,6 +183,8 @@ button.normal {
 
 #hero .icons {
   width: 100%;
+  position: relative;
+  top: 30%;
 }
 
 #hero .icons .image3 img {
@@ -250,7 +237,7 @@ button.normal {
 
 /* intro section */
 #intro {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 #intro .intro-text {
@@ -1125,6 +1112,7 @@ form {
 @media (max-width: 799px) {
   /* This is the media query for the "HomePage" */
   /* HOME-PAGE */
+
   #navbar {
     display: flex;
     flex-direction: column;
@@ -1187,14 +1175,6 @@ form {
     height: 80vh;
     padding: 0 80px;
     background-position: top 10% right 50%;
-  }
-
-  #hero .play {
-    position: absolute;
-    top: 18%;
-    right: 41.5%;
-    width: 80px;
-    height: 80px;
   }
 
   #hero img {
@@ -1290,7 +1270,7 @@ form {
 
   /* intro section */
   #intro {
-    padding: 70px 0;
+    padding: 180px 0;
   }
 
   #intro .intro-text h3 {
