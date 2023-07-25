@@ -243,6 +243,11 @@ button.normal {
 #intro .intro-text {
   justify-content: center;
   text-align: center;
+  transition: all 0.7s;
+}
+
+#intro .intro-text:hover {
+  scroll-snap-type: Y mandatory;
 }
 
 #intro .intro-text h3 {
@@ -317,6 +322,8 @@ button.normal {
   opacity: 0.9;
   position: relative;
   background-position: top 50% right 65%;
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
 }
 
 #Home-gallery .gallery .banner1 .banner-circle {
