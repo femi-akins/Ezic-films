@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+    <!-- animation-css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -36,7 +38,7 @@
         <ul id="navbar">
           <li><a href="index.html">Home</a></li>
           <li><a href="project.html">Our Works</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="services.html">Wedding films</a></li>
           <li><a href="about.html">About</a></li>
           <li>
             <button class="normal">
@@ -67,8 +69,9 @@
         <!-- 1st row -->
         <div class="row">
           <div class="col-lg-6">
-            <a href="https://youtu.be/RJ_7BERIz5c" target="_blank">
-              <div class="pro-gallery1">
+            <a href="https://www.youtube.com/watch?v=eaQPKirggrw">
+              <div class="pro-gallery1" data-aos="slide-right">
+                <img src="img/gallery1.png" alt="" />
                 <div class="pro-gallery-text">
                   <h4>CyberPunk</h4>
                   <p>invision studio</p>
@@ -78,8 +81,9 @@
           </div>
 
           <div class="col-lg-6">
-            <a href="https://youtu.be/uFwj6ZGARiU" target="_blank">
-              <div class="pro-gallery2">
+            <a href="https://youtu.be/uFwj6ZGARiU">
+              <div class="pro-gallery2" data-aos="zoom-in">
+                <img src="img/gallery2.png" alt="" />
                 <div class="pro-gallery-text">
                   <h4>CyberPunk</h4>
                   <p>invision studio</p>
@@ -91,8 +95,9 @@
         <!-- 2nd row -->
         <div class="row">
           <div class="col-lg-7">
-            <a href="" target="_blank">
-              <div class="pro-gallery1">
+            <a href="https://www.youtube.com/watch?v=8QufazhdwGg">
+              <div class="pro-gallery1" data-aos="zoom-in">
+                <img src="img/gallery3.png" alt="" />
                 <div class="pro-gallery-text">
                   <h4>CyberPunk</h4>
                   <p>invision studio</p>
@@ -102,8 +107,9 @@
           </div>
 
           <div class="col-lg-5">
-            <a href="" target="_blank">
-              <div class="pro-gallery2">
+            <a href="https://www.youtube.com/watch?v=uTjMAdIvKrw">
+              <div class="pro-gallery2" data-aos="zoom-in">
+                <img src="img/KNOR.png" alt="" />
                 <div class="pro-gallery-text">
                   <h4>CyberPunk</h4>
                   <p>invision studio</p>
@@ -115,8 +121,9 @@
         <!-- 3rd row -->
         <div class="row">
           <div class="col-lg-5">
-            <a href="https://youtu.be/pkBFZvzy6r4" target="_blank">
-              <div class="pro-gallery3">
+            <a href="https://www.youtube.com/watch?v=Wz-ZLJW773M">
+              <div class="pro-gallery3" data-aos="zoom-in">
+                <img src="img/Fasel.jpeg" alt="" />
                 <div class="pro-gallery-text">
                   <h4>Digital Future</h4>
                   <p>Motion Agency</p>
@@ -126,8 +133,9 @@
           </div>
 
           <div class="col-lg-7">
-            <a href="https://youtu.be/4uoO35ti8s8" target="_blank">
-              <div class="pro-gallery4">
+            <a href="https://www.youtube.com/watch?v=_jTwn90tJUU">
+              <div class="pro-gallery4" data-aos="zoom-in">
+                <img src="img/gallery3.png" alt="" />
                 <div class="pro-gallery-text">
                   <h4>Virtual Reality</h4>
                   <p>Vision Square</p>
@@ -140,31 +148,36 @@
         <!-- 4th row -->
         <div class="row">
           <div class="col-lg-6">
-            <div class="pro-gallery1">
-              <div class="pro-gallery-text">
-                <h4>CyberPunk</h4>
-                <p>invision studio</p>
+            <a href="https://vimeo.com/784094423">
+              <div class="pro-gallery1" data-aos="slide-right">
+                <img src="img/SOUR GRAPE.png" alt="" />
+                <div class="pro-gallery-text">
+                  <h4>CyberPunk</h4>
+                  <p>invision studio</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-lg-6">
-            <div class="pro-gallery2">
-              <div class="pro-gallery-text">
-                <h4>CyberPunk</h4>
-                <p>invision studio</p>
+            <a href="https://vimeo.com/784088937">
+              <div class="pro-gallery2" data-aos="zoom-in">
+                <img src="img/Pro1.jpg" alt="" />
+                <div class="pro-gallery-text">
+                  <h4>CyberPunk</h4>
+                  <p>invision studio</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
-        <!-- 5th row -->
       </div>
     </section>
 
     <!-- contact -->
     <section id="contact">
       <div class="container">
-        <div class="contact-text">
+        <div class="contact-text" data-aos="slide-up">
           <h6>Contact</h6>
           <h1>
             contact <br />
@@ -250,5 +263,12 @@
     ></script>
 
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
   </body>
 </html>

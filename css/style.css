@@ -243,7 +243,7 @@ button.normal {
 #intro .intro-text {
   justify-content: center;
   text-align: center;
-  transition: all 0.7s;
+  transition: all 0.9s ease-out 0s;
 }
 
 #intro .intro-text:hover {
@@ -310,18 +310,15 @@ button.normal {
 }
 
 #Home-gallery .gallery .banner1 {
-  background-image: linear-gradient(
-      180deg,
-      rgba(9, 9, 9, 0) 0%,
-      rgba(9, 9, 9, 0.3) 100%
-    ),
-    url(../img/Begin\ Film\ Festival.jpg);
+  position: relative;
+  transition: all 0.5s ease-out 0s;
+}
+#Home-gallery .gallery .banner1 img {
   width: 100%;
   height: 690px;
   border-radius: 5.9px;
   opacity: 0.9;
-  position: relative;
-  transition: all 0.5s ease-out 0s;
+  object-fit: cover;
 }
 
 #Home-gallery .gallery .banner1 .banner-circle {
@@ -382,19 +379,30 @@ button.normal {
   text-transform: uppercase;
 }
 
-#Home-gallery .gallery .banner2 {
-  width: 100%;
-  height: 300px;
-  background-image: linear-gradient(
-      180deg,
-      rgba(9, 9, 9, 0) 0%,
-      rgba(9, 9, 9, 0.3) 100%
-    ),
-    url(../img/gallery2.png);
-  margin: 20px 20px 20px 0;
-  border-radius: 5.9px;
+#Home-gallery .gallery .banner2,
+#Home-gallery .gallery .banner3,
+#Home-gallery .gallery .banner4,
+#Home-gallery .gallery .banner5 {
   position: relative;
   transition: all 0.5s ease-out 0s;
+}
+
+#Home-gallery .gallery .banner2 img,
+#Home-gallery .gallery .banner3 img {
+  width: 100%;
+  height: 300px;
+  margin: 20px 20px 20px 0;
+  border-radius: 5.9px;
+  object-fit: cover;
+}
+
+#Home-gallery .gallery .banner4 img,
+#Home-gallery .gallery .banner5 img {
+  width: 100%;
+  height: 300px;
+
+  border-radius: 5.9px;
+  object-fit: cover;
 }
 
 #Home-gallery .gallery .col-6 a {
@@ -435,49 +443,6 @@ button.normal {
   line-height: 100%;
   letter-spacing: 0.959px;
   text-transform: uppercase;
-}
-
-#Home-gallery .gallery .banner3 {
-  width: 100%;
-  height: 300px;
-  background-image: linear-gradient(
-      180deg,
-      rgba(9, 9, 9, 0) 0%,
-      rgba(9, 9, 9, 0.3) 100%
-    ),
-    url(../img/DISABILITY.png);
-  margin: 20px 0;
-  border-radius: 5.9px;
-  position: relative;
-  transition: all 0.5s ease-out 0s;
-}
-
-#Home-gallery .gallery .banner4 {
-  width: 100%;
-  height: 300px;
-  background-image: linear-gradient(
-      180deg,
-      rgba(9, 9, 9, 0) 0%,
-      rgba(9, 9, 9, 0.3) 100%
-    ),
-    url(../img/QUARANTINE\ CHRONICLES.png);
-  border-radius: 5.9px;
-  position: relative;
-  transition: all 0.5s ease-out 0s;
-}
-
-#Home-gallery .gallery .banner5 {
-  width: 100%;
-  height: 300px;
-  background-image: linear-gradient(
-      180deg,
-      rgba(9, 9, 9, 0) 0%,
-      rgba(9, 9, 9, 0.3) 100%
-    ),
-    url(../img/gallery2.png);
-  border-radius: 5.9px;
-  position: relative;
-  transition: all 0.5s ease-out 0s;
 }
 
 #Home-gallery .gallery-link {
@@ -620,7 +585,7 @@ button.normal {
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: all 0.5s ease-out 0s;
+  transition: all 0.9s ease-out 0s;
 }
 
 #contact .contact-text h6 {
@@ -924,41 +889,53 @@ footer .copyright p {
   text-transform: uppercase;
 }
 
-#pro-gallery .pro-gallery1 {
-  width: 100%;
-  height: 300px;
-  background-image: linear-gradient(
-      180deg,
-      rgba(9, 9, 9, 0) 0%,
-      rgba(9, 9, 9, 0.3) 100%
-    ),
-    url(../img/SOUR\ GRAPE.png);
-  border-radius: 5.9px;
-  background-position: top 20% left 35%;
+#pro-gallery .pro-gallery1,
+#pro-gallery .pro-gallery2,
+#pro-gallery .pro-gallery3,
+#pro-gallery .pro-gallery4,
+#pro-gallery .pro-gallery5,
+#pro-gallery .pro-gallery6,
+#pro-gallery .pro-gallery7,
+#pro-gallery .pro-gallery8,
+#pro-gallery .pro-gallery9,
+#pro-gallery .pro-gallery10,
+#pro-gallery .pro-gallery11,
+#pro-gallery .pro-gallery12 {
+  transition: all 0.5s ease-out 0s;
   position: relative;
-  margin: 10px 0;
 }
 
-#pro-gallery .pro-gallery2 {
+#pro-gallery .pro-gallery1 img,
+#pro-gallery .pro-gallery2 img,
+#pro-gallery .pro-gallery3 img,
+#pro-gallery .pro-gallery4 img,
+#pro-gallery .pro-gallery5 img,
+#pro-gallery .pro-gallery6 img,
+#pro-gallery .pro-gallery7 img,
+#pro-gallery .pro-gallery8 img,
+#pro-gallery .pro-gallery9 img,
+#pro-gallery .pro-gallery10 img,
+#pro-gallery .pro-gallery11 img,
+#pro-gallery .pro-gallery12 img {
   width: 100%;
   height: 300px;
-
-  background-image: linear-gradient(
-      180deg,
-      rgba(9, 9, 9, 0) 0%,
-      rgba(9, 9, 9, 0.3) 100%
-    ),
-    url(../img/UNCLE\ STEVEN\ PNG\ .png);
-
-  border-radius: 5.9px;
-  background-position: top 55% left 50%;
-  position: relative;
   margin: 10px 0;
   object-fit: cover;
+  opacity: 0.6;
 }
 
 #pro-gallery .pro-gallery1 .pro-gallery-text,
-#pro-gallery .pro-gallery2 .pro-gallery-text {
+#pro-gallery .pro-gallery2 .pro-gallery-text,
+#pro-gallery .pro-gallery3 .pro-gallery-text,
+#pro-gallery .pro-gallery4 .pro-gallery-text,
+#pro-gallery .pro-gallery5 .pro-gallery-text,
+#pro-gallery .pro-gallery6 .pro-gallery-text,
+#pro-gallery .pro-gallery7 .pro-gallery-text,
+#pro-gallery .pro-gallery8 .pro-gallery-text,
+#pro-gallery .pro-gallery9 .pro-gallery-text,
+#pro-gallery .pro-gallery10 .pro-gallery-text,
+#pro-gallery .pro-gallery11 .pro-gallery-text,
+#pro-gallery .pro-gallery12 .pro-gallery-text {
   position: absolute;
   top: 70%;
   left: 10%;
@@ -985,43 +962,6 @@ footer .copyright p {
   line-height: 100%; /* 10.279px */
   letter-spacing: 1.028px;
   text-transform: uppercase;
-}
-
-#pro-gallery .pro-gallery3 {
-  width: 100%;
-  height: 300px;
-  background-image: linear-gradient(
-      180deg,
-      rgba(9, 9, 9, 0) 0%,
-      rgba(9, 9, 9, 0.3) 100%
-    ),
-    url(../img/KNOR.png);
-  border-radius: 5.9px;
-  background-position: top 20% left 35%;
-  position: relative;
-  margin: 10px 0;
-}
-
-#pro-gallery .pro-gallery4 {
-  width: 100%;
-  height: 300px;
-  background-image: linear-gradient(
-      180deg,
-      rgba(9, 9, 9, 0) 0%,
-      rgba(9, 9, 9, 0.3) 100%
-    ),
-    url(../img/DISABILITY.png);
-  border-radius: 5.9px;
-  background-position: top 20% left 35%;
-  position: relative;
-  margin: 10px 0;
-}
-
-#pro-gallery .pro-gallery3 .pro-gallery-text,
-#pro-gallery .pro-gallery4 .pro-gallery-text {
-  position: absolute;
-  top: 70%;
-  left: 10%;
 }
 
 /* CONTACT PAGE */
