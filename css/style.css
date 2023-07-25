@@ -315,14 +315,12 @@ button.normal {
       rgba(9, 9, 9, 0) 0%,
       rgba(9, 9, 9, 0.3) 100%
     ),
-    url(../img/gallery1.png);
+    url(../img/Begin\ Film\ Festival.jpg);
   width: 100%;
   height: 690px;
   border-radius: 5.9px;
   opacity: 0.9;
   position: relative;
-  background-position: top 50% right 65%;
-  -webkit-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s;
 }
 
@@ -396,6 +394,7 @@ button.normal {
   margin: 20px 20px 20px 0;
   border-radius: 5.9px;
   position: relative;
+  transition: all 0.5s ease-out 0s;
 }
 
 #Home-gallery .gallery .col-6 a {
@@ -446,10 +445,11 @@ button.normal {
       rgba(9, 9, 9, 0) 0%,
       rgba(9, 9, 9, 0.3) 100%
     ),
-    url(../img/gallery3.png);
+    url(../img/DISABILITY.png);
   margin: 20px 0;
   border-radius: 5.9px;
   position: relative;
+  transition: all 0.5s ease-out 0s;
 }
 
 #Home-gallery .gallery .banner4 {
@@ -460,9 +460,10 @@ button.normal {
       rgba(9, 9, 9, 0) 0%,
       rgba(9, 9, 9, 0.3) 100%
     ),
-    url(../img/gallery3.png);
+    url(../img/QUARANTINE\ CHRONICLES.png);
   border-radius: 5.9px;
   position: relative;
+  transition: all 0.5s ease-out 0s;
 }
 
 #Home-gallery .gallery .banner5 {
@@ -476,6 +477,7 @@ button.normal {
     url(../img/gallery2.png);
   border-radius: 5.9px;
   position: relative;
+  transition: all 0.5s ease-out 0s;
 }
 
 #Home-gallery .gallery-link {
@@ -618,6 +620,7 @@ button.normal {
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: all 0.5s ease-out 0s;
 }
 
 #contact .contact-text h6 {
@@ -929,7 +932,7 @@ footer .copyright p {
       rgba(9, 9, 9, 0) 0%,
       rgba(9, 9, 9, 0.3) 100%
     ),
-    url(../img/UNCLE\ STEVEN\ PNG\ .png);
+    url(../img/SOUR\ GRAPE.png);
   border-radius: 5.9px;
   background-position: top 20% left 35%;
   position: relative;
@@ -939,16 +942,19 @@ footer .copyright p {
 #pro-gallery .pro-gallery2 {
   width: 100%;
   height: 300px;
+
   background-image: linear-gradient(
       180deg,
       rgba(9, 9, 9, 0) 0%,
       rgba(9, 9, 9, 0.3) 100%
     ),
-    url(../img/SOUR\ GRAPE.png);
+    url(../img/UNCLE\ STEVEN\ PNG\ .png);
+
   border-radius: 5.9px;
-  background-position: top 20% left 35%;
+  background-position: top 55% left 50%;
   position: relative;
   margin: 10px 0;
+  object-fit: cover;
 }
 
 #pro-gallery .pro-gallery1 .pro-gallery-text,
