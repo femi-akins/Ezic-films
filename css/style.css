@@ -42,7 +42,6 @@ button.normal {
   padding: 20px 10px 20px 40px;
   height: 80px;
   z-index: 999;
-  /* position: sticky; */
   top: 0;
   left: 0;
 }
@@ -96,6 +95,10 @@ button.normal {
   justify-content: center;
 }
 
+video {
+  object-fit: contain;
+}
+
 .back-video {
   position: absolute;
   right: 0;
@@ -103,19 +106,6 @@ button.normal {
   z-index: -1;
 }
 
-@media (min-aspect-ratio: 16/9) {
-  .back-video {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .back-video {
-    width: auto;
-    height: 100%;
-  }
-}
 #hero img {
   width: 38.137px;
   height: 38.137px;
@@ -311,8 +301,8 @@ button.normal {
 
 #Home-gallery .gallery .banner1 {
   position: relative;
-  transition: all 0.5s ease-out 0s;
 }
+
 #Home-gallery .gallery .banner1 img {
   width: 100%;
   height: 690px;
@@ -400,7 +390,6 @@ button.normal {
 #Home-gallery .gallery .banner5 img {
   width: 100%;
   height: 300px;
-
   border-radius: 5.9px;
   object-fit: cover;
 }
@@ -742,139 +731,111 @@ footer .copyright p {
   object-fit: contain;
 }
 
-#services {
-  padding: 80px 0;
+#about {
+  padding: 100px 0;
 }
 
-#services .services-head {
+#about .about-title {
+  padding: 40px 0;
+}
+#about .about-title h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+#about .about-title h2::after {
+  content: "";
+  width: 17%;
+  height: 2.5px;
+  background: #fff;
+  position: absolute;
+  top: 112%;
+  left: 41.5%;
+}
+#about .about-left img {
+  width: 100%;
+  height: 400px;
+  border-radius: 5.9px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+#about .about-left {
+  transition: all 1.5s ease-out 0s;
+}
+
+#about .about-right {
+  padding: 50px 0;
+  transition: all 1.5s ease-out 0s;
+}
+
+#about .about-right h5 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 120%;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+}
+
+#team {
+  padding: 30px 0;
+}
+
+#team .team-title {
   padding: 40px 0;
 }
 
-#services .services-head h4 {
-  color: #b3b3b3;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 31.2px */
-  letter-spacing: 1.2px;
-}
-
-#services .services-title h2 {
+#team .team-title h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%; /* 68.805px */
-  letter-spacing: 3.128px;
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px #e4e4e4;
-  -webkit-text-fill-color: transparent;
-  overflow: hidden;
-  margin: 0;
-}
-
-#services .services-title span {
-  color: var(--text-default, #fff);
-  font-family: "Montserrat", sans-serif;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%; /* 68.805px */
-  letter-spacing: 3.128px;
-  text-transform: uppercase;
-  width: 587.97px;
-}
-
-#services .services-subtitle {
-  padding-top: 20px;
-}
-#services .services-subtitle p {
-  color: var(--text-muted, rgba(255, 255, 255, 0.7));
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 80%; /* 38.676px */
-}
-
-#services .services-text h3 {
-  color: var(--text-default, #fff);
-  font-family: "Montserrat", sans-serif;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%; /* 50.961px */
-  letter-spacing: 1.82px;
-  text-transform: uppercase;
-}
-
-#services .services-text p {
-  color: var(--text-muted, rgba(255, 255, 255, 0.7));
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 170%; /* 38.676px */
-  width: 667.672px;
-}
-
-#services .services-footer {
-  background-image: linear-gradient(
-      180deg,
-      rgba(9, 9, 9, 0) 0%,
-      rgba(9, 9, 9, 0.3) 100%
-    ),
-    url(../img/gallery1.png);
-  width: 100%;
-  height: 390px;
-  border-radius: 5.9px;
-  opacity: 0.9;
+  text-align: center;
   position: relative;
-  background-position: top 20% left 15%;
-  object-fit: contain;
 }
 
-#services .services-footer-text {
+#team .team-title h2::after {
+  content: "";
+  width: 9%;
+  height: 2.5px;
+  background: #fff;
   position: absolute;
-  top: 80%;
-  left: 5%;
+  top: 112%;
+  left: 45.5%;
 }
 
-#services .services-footer-text h4 {
-  color: var(--text-default, #fff);
-  font-family: "Montserrat", sans-serif;
-  font-size: 22.24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%; /* 31.136px */
-  letter-spacing: 1.112px;
-  text-transform: uppercase;
+#team .team-group {
+  display: flex;
+  gap: 15px;
+  padding: 40px 0;
 }
 
-#services .services-footer-text p {
-  color: var(--text-muted, rgba(255, 255, 255, 0.7));
-  font-family: "Montserrat", sans-serif;
-  font-size: 9.035px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%; /* 9.035px */
-  letter-spacing: 0.903px;
-  text-transform: uppercase;
+#team .team-group .column1,
+#team .team-group .column2,
+#team .team-group .column3,
+#team .team-group .column4 {
+  transition: all 1.5s ease-out 0s;
+  mix-blend-mode: luminosity;
 }
 
-#services #row1,
-#row2,
-#row3,
-#row4,
-#row5,
-#row6 {
-  padding: 60px 0;
+#team .team-group img {
+  width: 100%;
+  border-radius: 5.9px;
+  mix-blend-mode: luminosity;
+}
+
+#team .team-group .person {
+  padding: 10px 0;
 }
 
 /* PROJECT PAGE */
 #hero.project {
   background: #000;
   height: 40vh;
+  padding: 190px 0;
+}
+
+.project .project-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .project .project-text h2 {
@@ -885,8 +846,17 @@ footer .copyright p {
   font-weight: 400;
   line-height: 110%;
   letter-spacing: 2.4px;
-  text-align: center;
   text-transform: uppercase;
+}
+
+.project .project-text h5 {
+  color: var(--text-default, #fff);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 2.4px;
 }
 
 #pro-gallery .pro-gallery1,
@@ -937,7 +907,7 @@ footer .copyright p {
 #pro-gallery .pro-gallery11 .pro-gallery-text,
 #pro-gallery .pro-gallery12 .pro-gallery-text {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 10%;
 }
 
@@ -1065,7 +1035,6 @@ form {
 @media (max-width: 799px) {
   /* This is the media query for the "HomePage" */
   /* HOME-PAGE */
-
   #navbar {
     display: flex;
     flex-direction: column;
@@ -1253,52 +1222,15 @@ form {
     right: 45%;
   }
 
-  #Home-gallery .gallery .banner1 .banner-circle p {
-    font-size: 9px;
+  #Home-gallery .gallery .banner1 img {
+    height: 400px;
   }
 
-  #Home-gallery .gallery .banner1 .banner-text {
-    position: absolute;
-    top: 78%;
-    right: 0;
-    left: 3%;
-  }
-
-  #Home-gallery .gallery .banner1 .banner-text h4 {
-    font-size: 20px;
-  }
-
-  #Home-gallery .gallery #banner1 {
-    margin-top: -5px;
-  }
-
-  #Home-gallery .gallery .banner1 {
-    width: 100%;
-    height: 242.627px;
-  }
-
-  #Home-gallery .gallery .banner2 {
-    width: 100%;
-    height: 121.115px;
-    background-position: top 20% right 60%;
-  }
-
-  #Home-gallery .gallery .banner3 {
-    width: 100%;
-    height: 121.115px;
-    background-position: top 30% right 60%;
-  }
-
-  #Home-gallery .gallery .banner4 {
-    width: 100%;
-    height: 121.115px;
-    background-position: top 30% right 60%;
-  }
-
-  #Home-gallery .gallery .banner5 {
-    width: 100%;
-    height: 121.115px;
-    background-position: top 20% right 60%;
+  #Home-gallery .gallery .banner2 img,
+  #Home-gallery .gallery .banner3 img,
+  #Home-gallery .gallery .banner4 img,
+  #Home-gallery .gallery .banner5 img {
+    height: 200px;
   }
 
   /* .cards-wrapper {
@@ -1309,9 +1241,7 @@ form {
   #Home-gallery .gallery .banner3-text,
   #Home-gallery .gallery .banner4-text,
   #Home-gallery .gallery .banner5-text {
-    position: absolute;
-    top: 60%;
-    left: 5%;
+    top: 80%;
   }
 
   #Home-gallery .gallery-link {
@@ -1331,10 +1261,8 @@ form {
 
   #Home-gallery .gallery-link p::after {
     content: "";
-    width: 46%;
-    height: 1.5px;
-    top: 150%;
-    left: 26.8%;
+    width: 30%;
+    left: 34.8%;
   }
 
   /* footer */
@@ -1424,5 +1352,246 @@ form {
 
   .project .project-text h2 {
     font-size: 40px;
+  }
+}
+
+/* Small screen */
+@media (max-width: 477px) {
+  /* This is the media query for the "HomePage" */
+  /* HOME-PAGE */
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 50px;
+    right: -300px;
+    height: 53vh;
+    width: 250px;
+    background: #000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    padding: 25px 20px 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #navbar li a {
+    font-size: 18px;
+  }
+
+  #navbar li {
+    margin-bottom: 15px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #fff;
+    font-size: 24px;
+    padding-right: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  #navbar li i {
+    display: none;
+  }
+
+  #hero {
+    height: 80vh;
+    padding: 0 80px;
+    background-position: top 10% right 50%;
+  }
+
+  #hero img {
+    margin-top: 17px;
+  }
+
+  #hero p {
+    font-size: 6px;
+  }
+
+  #hero #column {
+    display: none;
+  }
+
+  /* #hero .image1 {
+    padding-top: 25px;
+  }
+
+  #hero .image1 h3 {
+    color: var(--text-default, #fff);
+    font-size: 22px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    width: 180px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  #hero .image2 {
+    width: 70%;
+    padding-top: 35px;
+    margin-right: 0;
+  }
+
+  #hero .image2 p {
+    color: var(--text-default, #fff);
+    width: 120px;
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+  }
+
+  #hero .icons {
+    width: 100%;
+  }
+
+  #hero .icons .image3 img {
+    width: 70px;
+    height: 61px;
+  }
+
+  #hero .icons .image4 img {
+    width: 99px;
+    height: 61px;
+  }
+
+  #hero .icons .image5 img {
+    width: 70px;
+    height: 61px;
+  }
+
+  #hero .icons .image6 img {
+    width: 77px;
+    height: 61px;
+  }
+
+  #hero .icons .image7 img {
+    width: 50.492px;
+    height: 60px;
+  }
+
+  #hero .icons .image8 img {
+    width: 76px;
+    height: 61px;
+  }
+
+  #hero .icons .image9 img {
+    width: 43.103px;
+    height: 50px;
+  }
+
+  #hero .icons .image10 img {
+    width: 152.653px;
+    height: 45px;
+  } */
+
+  /* intro section */
+  #intro {
+    padding: 180px 0;
+  }
+
+  #intro .intro-text h3 {
+    font-size: 37px;
+  }
+
+  #intro .intro-text p {
+    font-size: 19px;
+  }
+
+  #intro .intro-text p::after {
+    width: 64%;
+    left: 18%;
+    height: 1.65px;
+  }
+
+  /* Home gallery */
+
+  #Home-gallery .title h5 {
+    font-size: 16px;
+  }
+
+  #Home-gallery .gallery .banner1 .banner-circle {
+    width: 60px;
+    height: 60px;
+    top: 35%;
+    right: 45%;
+  }
+
+  #Home-gallery .gallery .banner1 img {
+    height: 300px;
+  }
+
+  #Home-gallery .gallery .banner2 img,
+  #Home-gallery .gallery .banner3 img,
+  #Home-gallery .gallery .banner4 img,
+  #Home-gallery .gallery .banner5 img {
+    height: 150px;
+  }
+
+  /* .cards-wrapper {
+    display: flex;
+  } */
+
+  #Home-gallery .gallery .banner2-text,
+  #Home-gallery .gallery .banner3-text,
+  #Home-gallery .gallery .banner4-text,
+  #Home-gallery .gallery .banner5-text {
+    top: 80%;
+  }
+
+  #Home-gallery .gallery .banner2-text h4,
+  #Home-gallery .gallery .banner3-text h4,
+  #Home-gallery .gallery .banner4-text h4,
+  #Home-gallery .gallery .banner5-text h4 {
+    font-size: 10px;
+  }
+
+  #Home-gallery .gallery-link p::after {
+    content: "";
+    width: 45%;
+    left: 26.8%;
+  }
+
+  /* testimonials */
+  #testimonials {
+    padding: 40px 0;
+  }
+
+  #testimonials .header h4 {
+    font-size: 28px;
+  }
+
+  /* contact */
+  #contact .contact-text h1 {
+    font-size: 35px;
   }
 }
