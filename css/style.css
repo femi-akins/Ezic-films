@@ -344,7 +344,7 @@ video {
 
 #Home-gallery .gallery .banner1 .banner-text {
   position: absolute;
-  top: 88%;
+  top: 94%;
   right: 0;
   left: 3%;
 }
@@ -404,7 +404,7 @@ video {
 #Home-gallery .gallery .banner4-text,
 #Home-gallery .gallery .banner5-text {
   position: absolute;
-  top: 80%;
+  top: 86%;
   left: 5%;
 }
 
@@ -761,7 +761,7 @@ footer .copyright p {
 #team .team-group .column3,
 #team .team-group .column4 {
   transition: all 1.5s ease-out 0s;
-  mix-blend-mode: luminosity;
+
   width: 100%;
 }
 
@@ -876,13 +876,13 @@ footer .copyright p {
 #pro-gallery .pro-gallery12 .pro-gallery-text {
   position: absolute;
   top: 80%;
-  left: 10%;
+  left: 4%;
 }
 
 #pro-gallery .pro-gallery-text h4 {
   color: var(--text-default, #fff);
   font-family: "Montserrat", sans-serif;
-  font-size: 25.302px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
@@ -902,6 +902,27 @@ footer .copyright p {
   text-transform: uppercase;
 }
 
+/* SERVICES PAGE  */
+#pro-gallery .pro-gallery1 .pro-service-text,
+#pro-gallery .pro-gallery2 .pro-service-text,
+#pro-gallery .pro-gallery3 .pro-service-text,
+#pro-gallery .pro-gallery4 .pro-service-text {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+#pro-gallery .pro-service-text h4 {
+  color: var(--text-default, #fff);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 1.265px;
+  text-transform: uppercase;
+  margin: 0;
+}
 /* CONTACT PAGE */
 #form {
   padding: 100px 0;
