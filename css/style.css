@@ -679,13 +679,9 @@ footer .footer-icons i {
 footer .copyright {
   padding-top: 60px;
   margin-bottom: -40px;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer .right {
-  display: flex;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 footer .copyright p {
