@@ -124,11 +124,7 @@ video {
 }
 
 #hero .icons {
-  background: linear-gradient(
-    180deg,
-    rgba(9, 9, 9, 0) 0%,
-    rgba(9, 9, 9, 0.3) 100%
-  );
+  background-color: #363434;
 
   width: 100%;
   padding: 10px 50px;
@@ -694,7 +690,7 @@ footer .copyright p {
 /* ABOUT US PAGE  */
 #hero.about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../Img/gallery3.png);
+    url(../Img/about-banner.jpg);
   height: 100vh;
   padding: 190px 0;
 }
@@ -724,7 +720,7 @@ footer .copyright p {
 
 .about .about-title h5 {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
@@ -735,6 +731,7 @@ footer .copyright p {
 #team {
   padding: 80px 0;
 }
+
 #team .team-title {
   padding: 40px 0;
 }
@@ -792,7 +789,7 @@ footer .copyright p {
 /* PROJECT PAGE */
 #hero.project {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../Img/gallery3.png);
+    url(../Img/banner3.jpg);
   height: 70vh;
   padding: 190px 0;
 }
@@ -908,7 +905,7 @@ footer .copyright p {
 
 #hero.services {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../Img/Woko.jpg);
+    url(../Img/banner2.jpg);
   height: 70vh;
   padding: 190px 0;
 }
@@ -942,7 +939,7 @@ footer .copyright p {
   color: var(--text-default, #fff);
   /* heading/large uppercase */
   font-family: "Montserrat", sans-serif;
-  font-size: 128px;
+  font-size: 98px;
   font-style: normal;
   font-weight: 500;
   line-height: 110%; /* 140.8px */
@@ -955,13 +952,13 @@ input[type="text"],
 select,
 textarea {
   width: 100%;
-  padding: 16px;
+  padding: 12px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: none;
   border: 1px solid rgba(156, 156, 156, 0.4);
-  font-size: 13px;
+  font-size: 10px;
   color: #fff;
   background: #000;
 }
@@ -969,7 +966,7 @@ textarea {
 form label {
   color: var(--text-default, #fff);
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 14px */
@@ -981,7 +978,7 @@ form ::placeholder {
   text-transform: uppercase;
   color: rgba(156, 156, 156, 0.76);
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 14px */
@@ -997,7 +994,6 @@ form button {
   height: 40px;
   padding: 9.898px 13.197px;
   cursor: pointer;
-  font-size: 12px;
   font-weight: bold;
   transition: 0.4s ease;
   border-radius: 3.299px;
@@ -1009,7 +1005,7 @@ form button a {
   color: var(--text-default, #fff);
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 13.616px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 13.616px */
@@ -1024,7 +1020,6 @@ form button:hover a {
   color: #000;
 }
 
-/* Add a background color and some padding around the form */
 form {
   background-color: #000;
   padding: 20px;
