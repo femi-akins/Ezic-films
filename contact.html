@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -9,103 +8,129 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Mono&family=Ubuntu&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Mono&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <!-- bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- css style -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
     <title>Ezicfilmworks</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <section id="header">
-        <a href="{{ url('/') }}"><img src="assets/img/EZICFILWORS  LOGO.png" class="logo" alt="" /></a>
-        <div>
-            <ul id="navbar">
-                <li><a href="{{ url('/') }}">Home</a></li>
-                <li><a href="{{ url('/about') }}">About</a></li>
-                <li><a href="{{ url('/project') }}">Our Works</a></li>
-                <li><a href="{{ url('/services') }}">Wedding films</a></li>
-                <li>
-                    <button class="normal">
-                        <a href="{{ url('/contact') }}">Contact Us</a>
-                    </button>
-                </li>
-                <a href="#" id="close"><i class="fa fa-times"></i></a>
-            </ul>
-        </div>
+      <a href="index.html"
+        ><img src="assets/img/EZICFILWORS  LOGO.png" class="logo" alt=""
+      /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Our Works</a></li>
+          <li><a href="services.html">Wedding films</a></li>
+          <li>
+            <button class="normal">
+              <a href="contact.html">Contact Us</a>
+            </button>
+          </li>
+          <a href="#" id="close"><i class="fa fa-times"></i></a>
+        </ul>
+      </div>
 
-        <div id="mobile">
-            <i id="bar" class="fas fa-outdent"></i>
-        </div>
+      <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
     </section>
 
     <!-- contact -->
     <section id="form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="form-title">
-                        <h2>Let's Talk</h2>
-                    </div>
-                </div>
-
-                <div class="col-lg-7">
-                    @include('include.success') @include('include.warning') @include('include.error')
-                    <div class="contact-form">
-                        <form method="POST" action="{{ url('send-contact-form') }}">
-                            @csrf
-                            <label for="Name">Name</label> <br />
-                            <input type="text" name="name" placeholder="Name" required />
-                            <br />
-                            <br />
-                            <label for="Email Address">Email</label><br />
-                            <input type="text" name="email" placeholder="Email" required />
-                            <br />
-                            <br />
-                            <label for="textarea">Message</label> <br />
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                            <br />
-                            <br />
-                            <button type="submit"><a href="">Send Message</a></button>
-                            <br />
-                        </form>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="form-title">
+              <h2>Let's Talk</h2>
             </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <form method="POST" action="{{ url('send-contact-form') }}">
+                <label for="Name">Name</label> <br />
+                <input type="text" name="name" placeholder="Name" required />
+                <br />
+                <br />
+                <label for="Email Address">Email</label><br />
+                <input type="text" name="email" placeholder="Email" required />
+                <br />
+                <br />
+                <label for="textarea">Message</label> <br />
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+                <br />
+                <br />
+                <button type="submit"><a href="">Send Message</a></button>
+                <br />
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12" id="Ezic-logo">
-                    <img src="assets/img/EZICFILWORS  LOGO.png" alt="" />
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12" id="Ezic-logo">
+            <img src="assets/img/EZICFILWORS  LOGO.png" alt="" />
+          </div>
 
-                <div class="col-lg-6 col-sm-12">
-                    <div class="footer-icons">
-                        <!-- Social Media Icons -->
-                        <a href="https://www.instagram.com/ezicfilmworks/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/ezicfilmworks"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/channel/UCemxUoo6wbysGw1AJvQb2IQ"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-                </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="footer-icons">
+              <!-- Social Media Icons -->
+              <a href="https://www.instagram.com/ezicfilmworks/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/ezicfilmworks"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.youtube.com/channel/UCemxUoo6wbysGw1AJvQb2IQ"
+                ><i class="fab fa-youtube" aria-hidden="true"></i
+              ></a>
             </div>
-
-            <div class="copyright">
-                <p>@2023 Ezicfilmworks</p>
-            </div>
+          </div>
         </div>
+
+        <div class="copyright">
+          <p>@2023 Ezicfilmworks</p>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="assets/js/index.js"></script>
-</body>
-
+  </body>
 </html>
